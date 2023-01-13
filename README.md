@@ -91,15 +91,18 @@ Para criar uma função precisamos apenas informar no corpo da requisição o no
 
 
 > Criando Pessoa Funcionário
+
 Para criar uma entidade do tipo Pessoa Funcionário, precisamos passar no corpo da requisição as informações de Nome, CPF, Endereço, Telefone, Data de Contratação e uma lista contendo a Função ou Funções que o Funcionário exerce.
 
 ![alt text](img/imagem6.PNG)
 
 
 > Criando Pessoa Cliente
+
 Assim como criamos uma entidade Pessoa Funcionário, a entidade Pessoa Cliente é tão fácil quanto para criarmos, precisando apenas passar no corpo da requisição as informações de Nome, CPF, Endereço, Telefone e Data do último serviço.
 
 ![alt text](img/imagem7.PNG)
 
 > Os Demais Métodos 
+
 Os demais métodos para se trabalhar com Função, Pessoa Funcionário e Pessoa Cliente estão dispostas na página do Swagger citada acima, a utilização básica também já foi comentada na parte “”Utilização com Postman ou Insomnia””.

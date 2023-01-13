@@ -24,7 +24,7 @@ git clone `https://github.com/tarcizojr/DesafioRPE.git`
 
 Após efetuar o Download do código, e abri-lo no seu editor de código, é importante certificar se as dependências foram baixadas.
 
-Também é necessário que seja criado uma Base de Dados no PostgreSQL com o nome DesafioRPE, para que quando o código seja executado, todas as tabelas sejam criadas.
+Também é necessário que seja criado uma Base de Dados no PostgreSQL com o nome DesafioRPE, para que quando o código for executado, todas as tabelas sejam criadas.
 
 Feito isso podemos executar o código.
 

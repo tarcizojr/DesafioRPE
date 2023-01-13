@@ -114,12 +114,9 @@ public class PessoaClienteControler {
 
 		List<PessoaCliente> result = (List<PessoaCliente>) clienteService.findAll();
 
-		if (result.isEmpty()){
-			throw new Exception("Lista Vazia");
-
-		} else {
-			return (List<PessoaCliente>) clienteService.findAll();	
-		}
+	
+		return result;
+		
 	}
 	
 	@GetMapping("/{id}")

@@ -83,12 +83,9 @@ public class FuncaoControler {
 
 		List<Funcao> result = (List<Funcao>) funcaoService.findAll();
 
-		if (result.isEmpty()){
-			throw new Exception("Lista Vazia");
-
-		} else {
-			return (List<Funcao>) funcaoService.findAll();	
-		}
+		
+		return result;	
+		
 	}
 	
 	@GetMapping("/{id}")

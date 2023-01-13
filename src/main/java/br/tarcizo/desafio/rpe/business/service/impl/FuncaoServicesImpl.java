@@ -1,9 +1,7 @@
 package br.tarcizo.desafio.rpe.business.service.impl;
 
 import java.util.ArrayList;
-import java.util.Optional;
 
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
@@ -12,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 import br.tarcizo.desafio.rpe.business.service.FuncaoService;
 import br.tarcizo.desafio.rpe.model.entity.Funcao;
-import br.tarcizo.desafio.rpe.model.entity.PessoaFuncionario;
 import br.tarcizo.desafio.rpe.model.repository.FuncaoRespository;
 
 @Service
@@ -21,8 +18,6 @@ public class FuncaoServicesImpl implements FuncaoService {
 	@Autowired
 	private FuncaoRespository funcaoRespository;
 	
-	@Autowired
-	private ModelMapper mapper;
 	
 	@Override
 	public Funcao save(Funcao entity) {

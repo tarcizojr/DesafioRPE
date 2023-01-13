@@ -64,8 +64,13 @@ Segue o exemplo:
 ![alt text](img/imagem2.PNG)
 
 
-PUT: para atualizar um elemento já salvo, precisa primeiramente do Id desse elemento, que pode ser visto ao utilizado endpoint do tipo GET usando o /all (onde será listado todos os elementos), após isso no final dos endpoint deve ser adicionado /id do elemento, e passar os corpo do elemento como 
+PUT: para atualizar um elemento já salvo, precisa primeiramente do Id desse elemento, que pode ser visto ao utilizado endpoint do tipo GET usando o /all (onde será listado todos os elementos), como na imagem abaixo:
+
+![alt text](img/imagem3.PNG)
 
 
+Assim basta copiar as informações da entidade que deseja atualizar, copiar para o corpo da requisição e alterar o'que desejar. Lembrando de passar o id na URL.
 
-
+Segue o exemplo:
+(Se comparado com a imagem acima, pode ser percebido a alteração do CPF, Telefone e Nome )
+![alt text](img/imagem4.PNG)

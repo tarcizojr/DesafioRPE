@@ -90,28 +90,25 @@ public class PessoaFuncionarioControler {
 	
 	
 	@GetMapping("/all")
-	public List<PessoaFuncionario> findAll() throws Exception {
+	public List<PessoaFuncionarioDTO> findAll() throws Exception {
 
 		List<PessoaFuncionario> result = (List<PessoaFuncionario>) funcionarioService.findAll();
 
-		if (result.isEmpty()){
-			throw new Exception("Lista Vazia");
-
-		} else {
-			return (List<PessoaFuncionario>) funcionarioService.findAll();	
-		}
+		List<PessoaFuncionarioDTO> dto = converteService.pessoaToDTOList(result);
+		return dto;	
+		
 	}
 	
 	@GetMapping("/{id}")
-	public PessoaFuncionario findById(@PathVariable("id") Long id) throws Exception {
+	public PessoaFuncionarioDTO findById(@PathVariable("id") Long id) throws Exception {
 
 		PessoaFuncionario result = funcionarioService.findById(id);
-
+		PessoaFuncionarioDTO dto = converteService.pessoaToDTO(result);
 		if (result == null){
 			throw new Exception("Funcionario não econtrado");
 
 		} else {
-			return result;	
+			return dto;	
 		}
 	}
 

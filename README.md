@@ -16,7 +16,7 @@ Com o Git instalado em seu computador, abre um terminal de linha de comando (no 
 
 Cole o comando descrito abaixo:
 
-git clone https://github.com/tarcizojr/DesafioRPE.git
+git clone `https://github.com/tarcizojr/DesafioRPE.git`
 
 
 ## Executando:
@@ -34,7 +34,7 @@ Feito isso podemos executar o código.
 
 A utilização dos Endpoints da API são simples, para visualizar de uma forma inicial como se dá o funcionamento de cada uma, com o código executando, abra no seu navegador a seguinte página:
 
-http://localhost:8080/swagger-ui.html
+`http://localhost:8080/swagger-ui.html`
 
 Nele você poderá ver cada um dos Endpoints disponíveis, como utilizados e quais as possíveis respostas, além de executar algum deles.
 
@@ -57,14 +57,14 @@ Segue o exemplo:
 
 Para as demais requisições deve se atentar aos parâmetros necessários para execução.
 
-POST: para essa requisição é necessário ir na opção de Body do programa como o Insomnia e selecionar a opção JSON, e dentro do campo criar o corpo do objeto que deseja ser salvo, se atentando na forma como demonstrada na página Swagger.
+**POST**: para essa requisição é necessário ir na opção de Body do programa como o Insomnia e selecionar a opção JSON, e dentro do campo criar o corpo do objeto que deseja ser salvo, se atentando na forma como demonstrada na página Swagger.
 
 Segue o exemplo:
 
 ![alt text](img/imagem2.PNG)
 
 
-PUT: para atualizar um elemento já salvo, precisa primeiramente do Id desse elemento, que pode ser visto ao utilizado endpoint do tipo GET usando o /all (onde será listado todos os elementos), como na imagem abaixo:
+**PUT**: para atualizar um elemento já salvo, precisa primeiramente do Id desse elemento, que pode ser visto ao utilizado endpoint do tipo **GET** usando o /all (onde será listado todos os elementos), como na imagem abaixo:
 
 ![alt text](img/imagem3.PNG)
 
@@ -73,4 +73,33 @@ Assim basta copiar as informações da entidade que deseja atualizar, copiar par
 
 Segue o exemplo:
 (Se comparado com a imagem acima, pode ser percebido a alteração do CPF, Telefone e Nome )
+
 ![alt text](img/imagem4.PNG)
+
+
+## Utilização
+
+A utilização da API é feita dando a possibilidade do usuário criar Função (a qual será atribuída a um usuário Pessoa Funcionário), onde mais de uma pessoa poderá exercerá a mesma função e uma Pessoa Funcionário poderá exercer mais de uma função, a API também permite o cadastro de Pessoa Funcionário e Pessoa Cliente.
+
+Para utilizar primeiro temos que tomar cuidado caso seja desejado criar uma Pessoa Funcionário precisamos ter pelo menos um Função criada para poder atribuir a Pessoa Funcionário.
+
+> Criando Função
+
+Para criar uma função precisamos apenas informar no corpo da requisição o nome da função que deseja criar.
+
+![alt text](img/imagem5.PNG)
+
+
+> Criando Pessoa Funcionário
+Para criar uma entidade do tipo Pessoa Funcionário, precisamos passar no corpo da requisição as informações de Nome, CPF, Endereço, Telefone, Data de Contratação e uma lista contendo a Função ou Funções que o Funcionário exerce.
+
+![alt text](img/imagem6.PNG)
+
+
+> Criando Pessoa Cliente
+Assim como criamos uma entidade Pessoa Funcionário, a entidade Pessoa Cliente é tão fácil quanto para criarmos, precisando apenas passar no corpo da requisição as informações de Nome, CPF, Endereço, Telefone e Data do último serviço.
+
+![alt text](img/imagem7.PNG)
+
+> Os Demais Métodos 
+Os demais métodos para se trabalhar com Função, Pessoa Funcionário e Pessoa Cliente estão dispostas na página do Swagger citada acima, a utilização básica também já foi comentada na parte “”Utilização com Postman ou Insomnia””.

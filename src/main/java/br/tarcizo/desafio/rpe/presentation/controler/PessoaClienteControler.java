@@ -110,12 +110,14 @@ public class PessoaClienteControler {
 	}
 	
 	@GetMapping("/all")
-	public List<PessoaCliente> findAll() throws Exception {
+	public List<PessoaClienteDTO> findAll() throws Exception {
 
 		List<PessoaCliente> result = (List<PessoaCliente>) clienteService.findAll();
+		
+		List<PessoaClienteDTO> dto = converteService.pessoaToDTOList(result);
 
 	
-		return result;
+		return dto;
 		
 	}
 	

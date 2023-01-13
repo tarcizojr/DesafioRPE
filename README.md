@@ -12,7 +12,7 @@ JavaSE-17
 ## Obtendo o código-fonte:
 
 
-Com o Git instalado em seu computador, abre um terminal de linha de comando (no Windows o Git Bash ).
+Com o Git instalado em seu computador, é necessário abrir um terminal de linha de comando (no Windows o Git Bash ).
 
 Cole o comando descrito abaixo:
 
@@ -69,7 +69,7 @@ Segue o exemplo:
 ![alt text](img/imagem3.PNG)
 
 
-Assim basta copiar as informações da entidade que deseja atualizar, copiar para o corpo da requisição e alterar o'que desejar. Lembrando de passar o id na URL.
+Assim basta copiar as informações da entidade que deseja atualizar, copiar para o corpo da requisição e alterar o que desejar. Lembrando de passar o id na URL.
 
 Segue o exemplo:
 (Se comparado com a imagem acima, pode ser percebido a alteração do CPF, Telefone e Nome )
@@ -79,9 +79,9 @@ Segue o exemplo:
 
 ## Utilização
 
-A utilização da API é feita dando a possibilidade do usuário criar Função (a qual será atribuída a um usuário Pessoa Funcionário), onde mais de uma pessoa poderá exercerá a mesma função e uma Pessoa Funcionário poderá exercer mais de uma função, a API também permite o cadastro de Pessoa Funcionário e Pessoa Cliente.
+A utilização da API é feita dando a possibilidade do usuário criar Função (a qual será atribuída a um usuário Pessoa Funcionário), em que mais de uma pessoa poderá exercerá a mesma função e uma Pessoa Funcionário poderá exercer mais de uma função, a API também permite o cadastro de Pessoa Funcionário e Pessoa Cliente.
 
-Para utilizar primeiro temos que tomar cuidado caso seja desejado criar uma Pessoa Funcionário precisamos ter pelo menos um Função criada para poder atribuir a Pessoa Funcionário.
+Para utilizar primeiro temos que tomar cuidado caso seja desejado criar uma Pessoa Funcionário precisamos ter pelo menos uma Função criada para poder atribuir a Pessoa Funcionário.
 
 > Criando Função
 
@@ -97,7 +97,7 @@ Para criar uma entidade do tipo Pessoa Funcionário, precisamos passar no corpo 
 
 
 > Criando Pessoa Cliente
-Assim como criamos uma entidade Pessoa Funcionário, a entidade Pessoa Cliente é tão fácil quanto para criarmos, precisando apenas passar no corpo da requisição as informações de Nome, CPF, Endereço, Telefone e Data do último serviço.
+Assim como criamos uma entidade Pessoa Funcionário, a entidade Pessoa Cliente é tão fácil quanto, precisando apenas passar no corpo da requisição as informações de Nome, CPF, Endereço, Telefone e Data do último serviço.
 
 ![alt text](img/imagem7.PNG)
 

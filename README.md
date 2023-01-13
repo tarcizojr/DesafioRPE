@@ -98,14 +98,11 @@ Para criar uma entidade do tipo Pessoa Funcionário, precisamos passar no corpo 
 
 
 > Criando Pessoa Cliente
-<<<<<<< HEAD
-Assim como criamos uma entidade Pessoa Funcionário, a entidade Pessoa Cliente é tão fácil quanto, precisando apenas passar no corpo da requisição as informações de Nome, CPF, Endereço, Telefone e Data do último serviço.
-=======
 
-Assim como criamos uma entidade Pessoa Funcionário, a entidade Pessoa Cliente é tão fácil quanto para criarmos, precisando apenas passar no corpo da requisição as informações de Nome, CPF, Endereço, Telefone e Data do último serviço.
->>>>>>> bed63d5dd75d5d19187630485b381ed754434628
+Assim como criamos uma entidade Pessoa Funcionário, a entidade Pessoa Cliente é tão fácil quanto, precisando apenas passar no corpo da requisição as informações de Nome, CPF, Endereço, Telefone e Data do último serviço.
 
 ![alt text](img/imagem7.PNG)
+
 
 > Os Demais Métodos 
 
